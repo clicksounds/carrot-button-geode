@@ -25,8 +25,8 @@ class $modify(LevelSearchLayer) {
 
 		auto menu = static_cast<cocos2d::CCMenu*>(this->getChildByID("other-filter-menu"));
 
-		auto spr = CCSprite::create("carrotbutton.png"_spr);
-		spr->setScale(0.45f);
+		auto spr = CircleButtonSprite::create(CCSprite::create("carrot.png"_spr));
+		spr->setScale(0.8f);
 
 		auto btn = CCMenuItemSpriteExtra::create(
 			spr, menu, menu_selector(Carrot::carrotButton)
