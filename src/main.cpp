@@ -23,7 +23,7 @@ class $modify(LevelSearchLayer) {
 	bool init(int p0) {
 		if (!LevelSearchLayer::init(p0)) return false;
 
-		auto menu = static_cast<cocos2d::CCMenu*>(this->getChildByID("other-filter-menu"));
+		auto menu = static_cast<cocos2d::CCMenu*>(this->getChildren()->objectAtIndex(13));
 
 		auto spr = CircleButtonSprite::create(CCSprite::create("carrot.png"_spr));
 		spr->setScale(0.8f);
