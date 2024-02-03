@@ -7,7 +7,6 @@
 using namespace geode::prelude;
 
 class Carrot : public CCLayer {
-public:
     void carrotButton(CCObject* sender)
 	{
 		auto searchObj = GJSearchObject::create(SearchType::Search, "carrot");
@@ -19,7 +18,6 @@ public:
 };
 
 class $modify(LevelSearchLayer) {
-
 	bool init(int p0) {
 		if (!LevelSearchLayer::init(p0)) return false;
 
