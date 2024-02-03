@@ -7,6 +7,7 @@
 using namespace geode::prelude;
 
 class Carrot : public CCLayer {
+public:
     void carrotButton(CCObject* sender)
 	{
 		auto searchObj = GJSearchObject::create(SearchType::Search, "carrot");
