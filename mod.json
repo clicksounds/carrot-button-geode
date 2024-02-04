@@ -4,14 +4,24 @@
 		"win": "2.204",
 		"android": "2.205"
 	},
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"id": "carrot_devs.carrot_button",
 	"name": "Carrot Button",
-	"developer": "Carrot Devs",
+	"developers": [
+		"Carrot Devs",
+		"Uproxide"
+	],
 	"description": "adds a button that searches for levels with carrot in the name, the carrot carrot yes button carrot indeed button carrot",
-		"resources": {
+	"resources": {
 			"sprites": [
 				"resources/*.png"
 			]
-	}
+	},
+	"dependencies": [
+		{
+			"id": "geode.node-ids",
+			"version": ">=v1.1.4",
+			"importance": "required"
+		}
+	]
 }
